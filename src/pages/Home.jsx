@@ -142,21 +142,10 @@ export default function Home() {
                   us.
                 </Typography>
 
-                <Typography
-                  component="h5"
-                  fontWeight={"bold"}
-                  style={{ marginTop: 10 }}
-                >
-                  🌱 Our Mission
-                </Typography>
-                <Typography variant="body1">
-                  Our mission is to foster a deeper connection between people
-                  and nature by spearheading innovative planting projects. From
-                  pioneering Urban Tree Mapping endeavors to leveraging
-                  cutting-edge technology for Tree Identification Apps, we are
-                  committed to empowering individuals to be stewards of the
-                  environment.
-                </Typography>
+                                <Typography component="h5" fontWeight={"bold"} style={{ marginTop: 10 }}>🤝 Community Centered Approach</Typography>
+                                <Typography variant="body1">
+                                    Green Horizon Initiative is more than just a collection of projects; it's a vibrant community of individuals passionate about making a positive impact. We believe that true change happens when communities come together with a shared purpose. Join our growing family of green warriors and be part of a movement that transcends borders.
+                                </Typography>
 
                 <Typography
                   component="h5"
