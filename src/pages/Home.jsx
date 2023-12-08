@@ -59,9 +59,9 @@ export default function Home() {
                         spacing={2}
                         justifyContent="center"
                     >
-                        <Button variant="contained">About Us</Button>
-                        <Button variant="outlined">Our Services</Button>
-                        <Button variant="outlined">Contacts</Button>
+                        <Button variant="contained" href='#aboutUs'>About Us</Button>
+                        <Button variant="outlined" href='#ourServices'>Our Services</Button>
+                        <Button variant="outlined" href='#contactUs'>Contacts</Button>
                     </Stack>
                 </Container>
 
@@ -94,6 +94,7 @@ export default function Home() {
                                     variant="h5"
                                     color="text.primary"
                                     gutterBottom
+                                    id="aboutUs"
                                 >
                                     About Green Horizon Initiative
                                 </Typography>
@@ -128,6 +129,7 @@ export default function Home() {
                         variant="h5"
                         color="text.primary"
                         gutterBottom
+                        id="ourServices"
                     >
                         Services we offer at Green Horizon Initiative
                     </Typography>
@@ -214,6 +216,7 @@ export default function Home() {
                                 }}
                             >
                                 <Typography
+                                    id="contactUs"
                                     component="h4"
                                     variant="h5"
                                     color="text.primary"
