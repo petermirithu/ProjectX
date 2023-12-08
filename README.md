@@ -51,3 +51,9 @@ Follow these steps to set up the Green Horizon Initiative project:
    ```bash
    npm run dev
    ```
+# What We Did with Joel
+- I first created my project.
+- Joel then approved my first pr for "feature/add-homepage” to main branch.
+- After than we all created a branch which we all edited the same line under the about us section.
+- We then each raised pull requests. I merged Joel’s work first. So, I did not update my branch with his work. I then asked him to merge my work and it was there when we experience a merge conflict since we edited the same file and I did not have his work.
+I had to resolve the conflict on git hub and then he approved my pr to be merged into main.
