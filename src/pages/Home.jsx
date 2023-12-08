@@ -27,7 +27,7 @@ export default function Home() {
             <AppBar position="relative">
                 <Toolbar>
                     <Typography variant="h6" color="inherit" noWrap>
-                        Project X
+                        Project X - Green Horizon Initiative
                     </Typography>
                 </Toolbar>
             </AppBar>
