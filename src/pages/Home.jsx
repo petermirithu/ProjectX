@@ -9,6 +9,9 @@ import {
     Button,
     Grid,
     Paper,
+    Card,
+    CardMedia,
+    CardContent,
 } from '@mui/material';
 import CategoryIcon from '@mui/icons-material/Category';
 
@@ -35,6 +38,7 @@ export default function Home() {
                     pb: 2,
                 }}
             >
+                {/* Header Section */}
                 <Container maxWidth="lg">
                     <Typography
                         component="h1"
@@ -59,9 +63,10 @@ export default function Home() {
                         <Button variant="outlined">Contacts</Button>
                     </Stack>
                 </Container>
-
-                <Container style={{ marginTop: 50 }}>
-                    <Grid container component="main" sx={{ height: '50vh' }}>
+               
+                {/* About us Section */}
+                <Container style={{ marginTop: 50, position: "relative" }}>
+                    <Grid container component="main">
                         <Grid
                             item
                             xs={false}
@@ -114,8 +119,87 @@ export default function Home() {
                         </Grid>
                     </Grid>
                 </Container>
-            </Box>
 
+                 {/* Our Services Section */}
+                 <Container style={{ marginTop: 50, position: "relative" }}>
+                    <Typography
+                        component="h4"
+                        variant="h5"
+                        color="text.primary"
+                        gutterBottom
+                    >
+                        Services we offer at Green Horizon Initiative
+                    </Typography>
+                    <Grid container component="main" spacing={4}>
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Card
+                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <CardMedia
+                                    component="div"
+                                    sx={{
+                                        pt: '56.25%',
+                                    }}
+                                    image="urban_tree_mapping.jpeg"
+                                />
+                                <CardContent sx={{ flexGrow: 1 }}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        🌱 1. Urban Tree Mapping
+                                    </Typography>
+                                    <Typography>
+                                        Explore our cutting-edge Urban Tree Mapping service, where we leverage Geographic Information System (GIS) technology to create detailed digital maps of urban trees. This service not only provides valuable insights into tree distribution and health but also fosters a sense of community engagement in sustainable urban development.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Card
+                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <CardMedia
+                                    component="div"
+                                    sx={{
+                                        pt: '56.25%',
+                                    }}
+                                    image="tree_development.jpeg"
+                                />
+                                <CardContent sx={{ flexGrow: 1 }}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        📱 2. Tree Identification App Development
+                                    </Typography>
+                                    <Typography>
+                                        Immerse yourself in the world of innovation with our Tree Identification App Development service. Harnessing the power of image recognition technology, we create mobile apps that empower users to identify tree species effortlessly. This service is a bridge between technology and nature, making tree identification accessible to all.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Card
+                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <CardMedia
+                                    component="div"
+                                    sx={{
+                                        pt: '56.25%',
+                                    }}
+                                    image="community_tree_planting.jpeg"
+                                />
+                                <CardContent sx={{ flexGrow: 1 }}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        🌳 3. Community Tree Planting Programs
+                                    </Typography>
+                                    <Typography>
+                                        Join us in the field with our Community Tree Planting Programs, where we turn aspirations into action. Through collaborative efforts, we organize and lead initiatives to plant trees in public spaces, streets, and parks. Be part of the change, and witness the transformation of urban landscapes into green havens.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                    </Grid>
+                </Container>
+
+            </Box>
         </Box>
     );
 }
