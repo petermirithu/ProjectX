@@ -12,6 +12,7 @@ import {
     Card,
     CardMedia,
     CardContent,
+    TextField,
 } from '@mui/material';
 import CategoryIcon from '@mui/icons-material/Category';
 
@@ -63,7 +64,7 @@ export default function Home() {
                         <Button variant="outlined">Contacts</Button>
                     </Stack>
                 </Container>
-               
+
                 {/* About us Section */}
                 <Container style={{ marginTop: 50, position: "relative" }}>
                     <Grid container component="main">
@@ -120,8 +121,8 @@ export default function Home() {
                     </Grid>
                 </Container>
 
-                 {/* Our Services Section */}
-                 <Container style={{ marginTop: 50, position: "relative" }}>
+                {/* Our Services Section */}
+                <Container style={{ marginTop: 50, position: "relative" }}>
                     <Typography
                         component="h4"
                         variant="h5"
@@ -199,6 +200,74 @@ export default function Home() {
                     </Grid>
                 </Container>
 
+
+                {/* Contact us Section */}
+                <Container style={{ marginTop: 50, position: "relative" }}>
+                    <Grid container component="main">
+                        <Grid item xs={12} sm={6} md={6} component={Paper} elevation={6} square>
+                            <Box
+                                sx={{
+                                    my: 8,
+                                    mx: 4,
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                }}
+                            >
+                                <Typography
+                                    component="h4"
+                                    variant="h5"
+                                    color="text.primary"
+                                    gutterBottom
+                                >
+                                    How to reach us at Green Horizon Initiative
+                                </Typography>
+
+                                <form onSubmit={() => alert("Thank you for contacting us :) We shall get back to you soon.")}>
+                                    <TextField
+                                        label="Your Name"
+                                        variant="outlined"
+                                        margin="normal"
+                                        fullWidth
+                                        required
+                                    />
+                                    <TextField
+                                        label="Email Address"
+                                        type="email"
+                                        variant="outlined"
+                                        margin="normal"
+                                        fullWidth
+                                        required
+                                    />
+                                    <TextField
+                                        label="Message"
+                                        multiline
+                                        rows={4}
+                                        variant="outlined"
+                                        margin="normal"
+                                        fullWidth
+                                        required
+                                    />
+                                    <Button type="submit" variant="contained" color="primary">
+                                        Submit
+                                    </Button>
+                                </form>
+
+                            </Box>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={false}
+                            sm={6}
+                            md={6}
+                            sx={{
+                                backgroundImage: 'url(contact_us.jpeg)',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            }}
+                        />
+                    </Grid>
+                </Container>
             </Box>
         </Box>
     );
